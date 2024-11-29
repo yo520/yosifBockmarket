@@ -1,0 +1,84 @@
+body
+{   
+    background-color: #f7ecde;
+    overflow-x: hidden;
+}
+
+.title1
+{
+    color: #352e28;
+    font-family: "Pacifico", cursive;
+    z-index: 1000;
+    
+    
+}
+.title1::before
+{
+    content: "";
+    width: 19%;
+    height: 14px;
+    position: absolute;
+    top: 16%;
+    z-index: -1;
+    left: 0;
+    right:0 ;
+    background-color:rgba(254, 194, 96, 0.6);
+    margin: auto;
+    transition: all 0.2s;
+}
+.title1::after
+{
+    font-size: 10px;
+    content: "....................................................................................................................................................................................................................................................................";
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.title1:hover.title1::before
+{
+    
+    height: 40px ;
+    transform: translateY(-20px);
+    
+}
+
+
+ul 
+{
+
+    /* color:  linear-gradient(to right, #3ca55c, #b5ac49); */
+    /* color:  color-mix(in hsl shorter hue,  #3ca55c 50%, #b5ac49 50%) */
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+
+}
+.btnsub
+{
+    background-color: #d1512d;
+    transition: all 0.4s;
+    width: 150px;
+}
+
+.btnsub:hover
+{
+    background-color:#783725 ;
+}
+
+
+.sub::before
+{
+    font-size: 10px;
+    content: "...........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................";
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+}
